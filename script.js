@@ -35,7 +35,7 @@ const APP = {
     album:{
 
 
-        title:"Nossa História",
+        title:"Ainda Lembro",
 
 
         artist:"Ryhan",
@@ -44,7 +44,7 @@ const APP = {
         year:"2026",
 
 
-        description:"27 faixas • 3 meses de amor",
+        description:"23 faixas • 3 meses de amor",
 
 
         cover:"assets/album-cover.jpg"
@@ -58,66 +58,180 @@ const APP = {
 
     songs:{
 
-
-        "Morena Flor":{
-
-
-            title:"Morena Flor",
-
-
-            artist:"Seu Jorge",
-
-
-            audio:"songs/morena-flor.mp3",
-
-
-            cover:"assets/music-covers/morena-flor.jpg"
-
-
-        },
-
-
-
-        "Te Vi":{
-
-
-            title:"Te Vi",
-
-
-            artist:"Piso 21",
-
-
-            audio:"songs/te-vi.mp3",
-
-
-            cover:"assets/music-covers/te-vi.jpg"
-
-
-        },
-
-
-
-        "Forever":{
-
-
-            title:"Forever",
-
-
-            artist:"The Little Dippers",
-
-
-            audio:"songs/forever.mp3",
-
-
-            cover:"assets/music-covers/forever.jpg"
-
-
-        }
-
-
+    "Morena Flor":{
+        title:"Morena Flor",
+        artist:"Toquinho",
+        audio:"songs/morena-flor.mp3",
+        cover:"assets/music-covers/morena-flor.jpg"
     },
 
+    "Te Vi":{
+        title:"Te Vi",
+        artist:"Piso 21",
+        audio:"songs/te-vi.mp3",
+        cover:"assets/music-covers/te-vi.jpg"
+    },
 
+    "Te Encontrar":{
+        title:"Te Encontrar",
+        artist:"ModestiaParte",
+        audio:"songs/te-encontrar.mp3",
+        cover:"assets/music-covers/te-encontrar.jpg"
+    },
+
+    "Parece Destino":{
+        title:"Parece Destino",
+        artist:"Pibara",
+        audio:"songs/parece-destino.mp3",
+        cover:"assets/music-covers/parece-destino.jpg"
+    },
+
+    "Esse Seu Jeito":{
+        title:"Esse Seu Jeito",
+        artist:"Jean Tassy",
+        audio:"songs/esse-seu-jeito.mp3",
+        cover:"assets/music-covers/esse-seu-jeito.jpg"
+    },
+
+    "Aqueles Olhos":{
+        title:"Aqueles Olhos",
+        artist:"Dom M",
+        audio:"songs/aqueles-olhos.mp3",
+        cover:"assets/music-covers/aqueles-olhos.jpg"
+    },
+
+    "Meu Abrigo":{
+        title:"Meu Abrigo",
+        artist:"Melim",
+        audio:"songs/meu-abrigo.mp3",
+        cover:"assets/music-covers/meu-abrigo.jpg"
+    },
+
+    "Ela Só Quer Paz":{
+        title:"Ela Só Quer Paz",
+        artist:"Projota",
+        audio:"songs/ela-so-quer-paz.mp3",
+        cover:"assets/music-covers/ela-so-quer-paz.jpg"
+    },
+
+    "Quando Bate Aquela Saudade":{
+        title:"Quando Bate Aquela Saudade",
+        artist:"Rubel",
+        audio:"songs/quando-bate-aquela-saudade.mp3",
+        cover:"assets/music-covers/quando-bate-aquela-saudade.jpg"
+    },
+
+    "Pensando em Mim":{
+        title:"Pensando em Mim",
+        artist:"Matchola",
+        audio:"songs/pensando-em-mim.mp3",
+        cover:"assets/music-covers/pensando-em-mim.jpg"
+    },
+
+    "Você":{
+        title:"Você",
+        artist:"Tim Maia",
+        audio:"songs/voce.mp3",
+        cover:"assets/music-covers/voce.jpg"
+    },
+
+    "Amar Como Você":{
+        title:"Amar Como Você",
+        artist:"Rebecca Sugar",
+        audio:"songs/amar-como-voce.mp3",
+        cover:"assets/music-covers/amar-como-voce.jpg"
+    },
+
+    "Deusa":{
+        title:"Deusa",
+        artist:"Venere Vai Venus",
+        audio:"songs/deusa.mp3",
+        cover:"assets/music-covers/deusa.jpg"
+    },
+
+    "Bonita":{
+        title:"Bonita",
+        artist:"L7NNON",
+        audio:"songs/bonita.mp3",
+        cover:"assets/music-covers/bonita.jpg"
+    },
+
+    "Nuestra Canción":{
+
+    title:"Nuestra Canción",
+
+    artist:"Monsieur Periné",
+
+    audio:"songs/nuestra-cancion.mp3",
+
+    cover:"assets/music-covers/nuestra-cancion.jpg"
+
+},
+
+    "Eternamente":{
+        title:"Eternamente",
+        artist:"Gal Costa",
+        audio:"songs/eternamente.mp3",
+        cover:"assets/music-covers/eternamente.jpg"
+    },
+
+    "A Dama e o Vagabundo":{
+        title:"A Dama e o Vagabundo",
+        artist:"Oriente",
+        audio:"songs/a-dama-e-o-vagabundo.mp3",
+        cover:"assets/music-covers/a-dama-e-o-vagabundo.jpg"
+    },
+
+    "Escolhi Você":{
+        title:"Escolhi Você",
+        artist:"ALMAR",
+        audio:"songs/escolhi-voce.mp3",
+        cover:"assets/music-covers/escolhi-voce.jpg"
+    },
+
+    "Final Feliz":{
+        title:"Final Feliz",
+        artist:"Jorge Vercillo",
+        audio:"songs/final-feliz.mp3",
+        cover:"assets/music-covers/final-feliz.jpg"
+    },
+
+    "Brilhe":{
+        title:"Brilhe",
+        artist:"Roberto Garcia",
+        audio:"songs/brilhe.mp3",
+        cover:"assets/music-covers/brilhe.jpg"
+    },
+
+    "Como É Grande o Meu Amor por Você":{
+        title:"Como É Grande o Meu Amor por Você",
+        artist:"Roberto Carlos",
+        audio:"songs/como-e-grande-o-meu-amor-por-voce.mp3",
+        cover:"assets/music-covers/como-e-grande-o-meu-amor-por-voce.jpg"
+    },
+
+    "Eu Amo Você":{
+        title:"Eu Amo Você",
+        artist:"Tim Maia",
+        audio:"songs/eu-amo-voce.mp3",
+        cover:"assets/music-covers/eu-amo-voce.jpg"
+    },
+
+    "Pretin":{
+        title:"Pretin",
+        artist:"Flora Matos",
+        audio:"songs/pretin.mp3",
+        cover:"assets/music-covers/pretin.jpg"
+    },
+
+    "Forever":{
+        title:"Forever",
+        artist:"The Little Dippers",
+        audio:"songs/forever.mp3",
+        cover:"assets/music-covers/forever.jpg"
+    }
+
+},
 
 
 
@@ -417,35 +531,58 @@ text:
 },
 
 
-
 {
 
 text:
 
-`Às vezes eu fico pensando em como a vida consegue mudar completamente por causa de um único momento. Eu ainda lembro do instante em que <song>Te Vi</song>. Naquela hora eu não fazia ideia de que aquele encontro mudaria tanta coisa dentro de mim. Hoje, olhando para trás, tudo realmente <song>Parece Destino</song>.`
+`Às vezes eu fico pensando em como a vida consegue mudar completamente por causa de um único momento. Eu ainda lembro do instante em que <song>Te Vi</song> na Nerdeste, que infelizmente não foi muito. Mas naquela hora eu não fazia ideia de que aquele encontro mudaria tanta coisa dentro de mim.`
 
 },
-
-
-
-{
-
-text:
-
-`Talvez eu nunca consiga explicar direito o que me fez me apaixonar. Talvez tenha sido <song>Esse Seu Jeito</song>, talvez <song>Aqueles Olhos</song>, talvez esse sorriso tão bonito... ou talvez tenha sido simplesmente porque você é você. A verdade é que, desde então, passei a enxergar o mundo de um jeito diferente.`
-
-},
-
 
 
 {
 
 text:
 
-`Você é aquela pessoa que chega sem fazer esforço e transforma qualquer lugar em casa. E eu fui percebendo, pouco a pouco, que você se tornou <song>Meu Abrigo</song>. Mesmo quando estamos longe, existe uma paz que só encontro em você, porque no fundo eu sei que <song>Ela Só Quer Paz</song>, e tudo o que eu mais quero é ser alguém que possa oferecer exatamente isso.`
+`E até hoje eu acho incrível pensar que, em meio a tantas pessoas no mundo, eu consegui <song>Te Encontrar</song>. O jeito que a gente se aproximou, a hora, o dia e como tudo foi acontecendo fazem eu olhar para trás e perceber que tudo realmente <song>Parece Destino</song>.`
 
 },
 
+
+{
+
+text:
+
+`Talvez eu nunca consiga explicar direito o que me fez me apaixonar. Talvez tenha sido <song>Esse Seu Jeito</song>, talvez <song>Aqueles Olhos</song> grandes, talvez seja o teu sorriso tão bonito... ou talvez seja porque você é você.`
+
+},
+
+
+{
+
+text:
+
+`A verdade é que, desde então, passei a enxergar o mundo de um jeito diferente.`
+
+},
+
+
+{
+
+text:
+
+`Você é aquela pessoa que chega sem fazer esforço e transforma qualquer momento em algo especial. E eu fui percebendo, pouco a pouco, que você se tornou <song>Meu Abrigo</song>.`
+
+},
+
+
+{
+
+text:
+
+`Mesmo quando estamos longe, existe uma paz que só encontro em você, porque no fundo eu sei que <song>Ela Só Quer Paz</song>, e tudo que eu mais quero é ser alguém que consiga trazer essa paz para sua vida também.`
+
+},
 
 
 {
@@ -457,95 +594,121 @@ text:
 },
 
 
-
 {
 
 text:
 
-`Nessas horas tudo o que eu queria era <song>Você</song>, nem que fosse por alguns minutos, só para ouvir sua voz ou lembrar que existe alguém tão especial esperando por mim do outro lado da tela.`
+`Nessas horas, tudo que eu queria era estar perto de <song>Você</song>, nem que fosse por alguns minutos, só para ouvir sua voz, te fazer cafuné ou só para ficar bem pertinho sentindo sua pele.`
 
 },
-
-
-
-{
-
-text:
-
-`Você me ensinou coisas que <song>Ninguém Me Ensinou</song>. Me mostrou que é possível amar com calma, com carinho, com respeito e com verdade. Foi com você que eu aprendi o verdadeiro significado de <song>Amar Como Você</song>.`
-
-},
-
 
 
 {
 
 text:
 
-`Se hoje alguém me perguntasse quem é o meu lugar favorito no mundo, eu responderia sem pensar duas vezes que é onde você está. Porque você virou <song>Meu Lugar</song>, meu porto seguro, meu descanso e a melhor parte dos meus dias.`
+`Com você eu descobri que é possível amar com calma, com carinho, com respeito e com verdade.`
 
 },
-
 
 
 {
 
 text:
 
-`Às vezes eu olho para você e penso: "Que <song>Deusa</song>." Outras vezes penso apenas em como você é <song>Bonita</song>. Mas nenhuma dessas palavras consegue explicar completamente quem você é para mim.`
+`Foi com você que eu aprendi uma forma diferente de sentir, uma forma de <song>Amar Como Você</song>. E, sinceramente, acho que nunca vou conseguir agradecer por tudo que você trouxe para minha vida.`
 
 },
-
 
 
 {
 
 text:
 
-`Então, <song>Deixa Eu Dizer</song>: obrigado por me encontrar, por ficar, por acreditar na gente e por transformar meus dias em algo muito melhor.`
+`Às vezes eu olho para você e penso: "Que <song>Deusa</song>."`
 
 },
-
 
 
 {
 
 text:
 
-`Eu ainda acredito que <song>Preciso Dizer Que Te Amo</song>, hoje, amanhã e em todos os dias que ainda vierem.`
+`Outras vezes penso apenas em como você é <song>Bonita</song>. Mas nenhuma dessas palavras consegue explicar completamente tudo que você é para mim.`
 
 },
-
 
 
 {
 
 text:
 
-`Você virou a música da minha vida com sua voz linda. Toda lembrança bonita acaba me levando até você, como se existisse sempre a nossa <song>Nuestra Canción</song> tocando baixinho dentro do meu coração.`
+`Porque a beleza que eu vejo em você não está apenas no que aparece por fora, mas também na forma como você cuida de mim, na maneira como me faz sorrir e nesse seu jeito tão único.`
 
 },
-
 
 
 {
 
 text:
 
-`Quando penso na nossa história, não consigo imaginar outro jeito de descrevê-la além de <song>Só Nós Dois</song>, caminhando juntos, aprendendo juntos e sonhando juntos.`
+`Você virou uma das partes mais bonitas da minha história. Cada conversa, cada música, cada momento em que você conseguiu me fazer sorrir acabou se transformando em pequenas lembranças que eu vou guardar comigo.`
 
 },
-
 
 
 {
 
 text:
 
-`Talvez sejamos como <song>A Dama e o Vagabundo</song>, diferentes em algumas coisas, parecidos em tantas outras, mas sempre encontrando um jeito de fazer dar certo.`
+`E, no meio de tudo isso, a gente acabou encontrando <song>Nuestra Canción</song>, que guarda um pouco da nossa história, dos nossos sentimentos e de tudo aquilo que vivemos juntos.`
 
 },
 
+
+{
+
+text:
+
+`Algumas coisas talvez pareçam simples, mas para mim carregam um significado enorme e vão permanecer comigo <song>Eternamente</song>.`
+
+},
+
+
+{
+
+text:
+
+`Você me mostrou que duas pessoas diferentes podem encontrar um jeito de combinar.`
+
+},
+
+
+{
+
+text:
+
+`Talvez a gente pareça como <song>A Dama e o Vagabundo</song>, com suas diferenças, mas parecidos em tantas outras, e mesmo assim sempre encontrando um jeito de fazer dar certo.`
+
+},
+
+
+{
+
+text:
+
+`Porque o amor nunca foi sobre sermos iguais, mas sobre escolher ficar.`
+
+},
+
+
+{
+
+text:
+
+`E entre tantas pessoas no mundo, entre tantos caminhos possíveis, existe uma certeza que eu tenho todos os dias: eu <song>Escolhi Você</song>.`
+
+},
 
 
 {
@@ -557,26 +720,57 @@ text:
 },
 
 
+{
+
+text:
+
+`Um futuro cheio de pequenas lembranças, novas histórias, risadas sinceras, abraços demorados e sonhos realizados.`
+
+},
+
 
 {
 
 text:
 
-`Eu quero continuar ao seu lado, vendo você crescer, sorrir, e quero que <song>Brilhe</song> cada vez mais. Sou alguém que sempre vai torcer por você, porque ver você feliz também faz parte da minha felicidade. E, sem perceber, eu já <song>Escolhi Você</song> há muito tempo.`
+`Enquanto esse futuro não chega, eu só quero continuar ao seu lado, vendo você crescer, sorrir e conquistar tudo aquilo que merece.`
 
 },
-
 
 
 {
 
 text:
 
-`Talvez eu nunca encontre palavras suficientes para explicar <song>Como É Grande o Meu Amor por Você</song>. Então vou resumir do jeito mais simples que existe: <song>Eu Amo Você</song>.`
+`Quero que você <song>Brilhe</song> cada vez mais, porque ver você feliz também faz parte da minha felicidade.`
 
 },
 
 
+{
+
+text:
+
+`E talvez eu nunca encontre palavras suficientes para explicar <song>Como É Grande o Meu Amor por Você</song>.`
+
+},
+
+
+{
+
+text:
+
+`Então vou resumir do jeito mais simples que existe:`
+
+},
+
+{
+
+text:
+
+` <song>Eu Amo Você</song>.`
+
+},
 
 {
 
@@ -587,22 +781,15 @@ text:
 },
 
 
-
 {
 
 text:
 
-`Porque depois de tudo que vivemos nesses 3 meses, de tudo que passamos e ainda vamos viver, eu só tenho um desejo: que isso dure <song>Forever</song>.`
+`Porque depois de tudo que vivemos nesses 3 meses, de tudo que passamos e de tudo que ainda vamos viver, eu só tenho um desejo: que isso dure <song>Forever</song>.`
 
 }
 
 ];
-
-
-
-
-
-
 
 
 
@@ -627,19 +814,19 @@ function convertSongs(text){
 
 
 
-            return `
+          return `
 
-            <span
+<span
 
-            class="song"
+class="song"
 
-            data-song="${songName}">
+data-song="${songName}">
 
-            (${songName})
+${songName}
 
-            </span>
+</span>
 
-            `;
+`;
 
 
         }
@@ -1477,7 +1664,6 @@ function songEnded(){
 function openLetter(){
 
 
-
     if(!DOM.app){
 
         return;
@@ -1486,13 +1672,9 @@ function openLetter(){
 
 
 
-
-
     DOM.app.classList.add(
         "opening-letter"
     );
-
-
 
 
 
@@ -1504,11 +1686,17 @@ function openLetter(){
         );
 
 
-
         DOM.letterScreen.classList.add(
             "active"
         );
 
+
+
+    },1500);
+
+
+
+    setTimeout(()=>{
 
 
         DOM.app.classList.remove(
@@ -1517,18 +1705,11 @@ function openLetter(){
 
 
 
-    },1400);
+    },1700);
 
 
 
 }
-
-
-
-
-
-
-
 
 
 /* =========================
