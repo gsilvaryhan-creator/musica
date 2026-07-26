@@ -1,129 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#2a0a12" />
-<title>Nossa História — Para Tainá</title>
-<meta name="description" content="Um álbum de amor: uma carta com trilha sonora, escrita por Ryhan para Tainá." />
-<meta property="og:title" content="Nossa História — Para Tainá" />
-<meta property="og:description" content="Um álbum de amor: uma carta com trilha sonora." />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" />
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div id="app" class="spotify-bg"></div>
 
-<!-- ============ TELA DE CAPA (ÁLBUM) ============ -->
-<template id="tpl-cover">
-  <div class="screen cover-screen fade-swap">
-    <header class="top-bar">
-      <button class="icon-btn" aria-label="Voltar">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-      </button>
-      <div class="top-title">
-        <div class="eyebrow">Tocando álbum</div>
-        <div class="title-sm">Nossa História</div>
-      </div>
-      <button class="icon-btn" aria-label="Mais">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
-      </button>
-    </header>
+    <!-- ===================================================== -->
+    <!-- APP -->
+    <!-- ===================================================== -->
 
-    <div class="cover-wrap cover-enter">
-      <div class="album-shadow album-frame">
-        <img src="assets/album-cover.jpg" alt="Nossa História" draggable="false" />
-      </div>
-    </div>
+    <main id="app">
 
-    <div class="cover-meta cover-enter" style="animation-delay:120ms">
-      <h1>Nossa História</h1>
-      <p class="artist">Ryhan</p>
-      <p class="sub">Álbum · 2026</p>
-      <p class="sub">27 faixas · 3 meses de amor</p>
-    </div>
+        <!-- ============================================== -->
+        <!-- TELA DO ÁLBUM -->
+        <!-- ============================================== -->
 
-    <div class="cover-controls cover-enter" style="animation-delay:220ms">
-      <button class="icon-btn" aria-label="Anterior">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zM9.5 12l8.5 6V6z"/></svg>
-      </button>
-      <button id="btn-open" class="big-play" aria-label="Abrir carta">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-      </button>
-      <button class="icon-btn" aria-label="Próxima">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg>
-      </button>
-    </div>
+        <section id="albumScreen">
 
-    <p class="hint">Toque no play para começar a nossa história.</p>
-  </div>
-</template>
+            <!-- Cabeçalho -->
 
-<!-- ============ TELA DA CARTA (LETRA) ============ -->
-<template id="tpl-letter">
-  <div class="screen letter-screen fade-swap">
-    <header class="top-bar">
-      <button id="btn-back" class="icon-btn" aria-label="Voltar">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="top-title">
-        <div class="eyebrow">Letra</div>
-        <div class="title-sm">Nossa História</div>
-      </div>
-      <button class="icon-btn" aria-label="Compartilhar">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
-      </button>
-    </header>
+            <header class="topbar">
 
-    <div class="mini-album letter-rise">
-      <div id="mini-cover" class="cover-glow">
-        <img src="assets/album-cover.jpg" alt="" draggable="false" />
-      </div>
-      <div class="mini-meta">
-        <div class="mini-title">Nossa História</div>
-        <div class="mini-sub">Ryhan · 2026</div>
-      </div>
-    </div>
+                <button
+                    id="albumBack"
+                    aria-label="Voltar">
+                    ←
+                </button>
 
-    <article id="letter" class="letter letter-rise" style="animation-delay:80ms"></article>
+                <div class="topbar-center">
+                    <span>Tocando álbum</span>
+                    <h1>Nossa História</h1>
+                </div>
 
-    <p class="signoff">— com todo o meu amor.</p>
-  </div>
-</template>
+                <button
+                    id="albumOptions"
+                    aria-label="Opções">
+                    ⋮
+                </button>
 
-<!-- ============ PLAYER FIXO ============ -->
-<footer id="player" class="player-shell">
-  <div class="player-inner">
-    <div class="player-row">
-      <div class="player-cover"><img src="assets/album-cover.jpg" alt="" draggable="false" /></div>
-      <div class="player-meta">
-        <div id="p-title" class="p-title">Nossa História</div>
-        <div id="p-sub" class="p-sub">Toque uma música da carta</div>
-      </div>
-      <button id="p-prev" class="icon-btn" aria-label="Anterior" disabled>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zM9.5 12l8.5 6V6z"/></svg>
-      </button>
-      <button id="p-toggle" class="play-btn" aria-label="Tocar" disabled>
-        <svg id="p-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-      </button>
-      <button id="p-next" class="icon-btn" aria-label="Próxima" disabled>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg>
-      </button>
-    </div>
-    <div class="progress-row">
-      <span id="p-cur" class="time">0:00</span>
-      <div id="p-track" class="progress-track"><div id="p-fill" class="progress-fill"></div></div>
-      <span id="p-dur" class="time">0:00</span>
-    </div>
-  </div>
-</footer>
+            </header>
 
-<audio id="audio" preload="metadata"></audio>
+            <!-- Conteúdo -->
 
-<script src="app.js"></script>
+            <section class="album-content">
+
+                <!-- Capa -->
+
+                <img
+                    id="albumCover"
+                    src="assets/album-cover.jpg"
+                    alt="Capa do álbum Nossa História">
+
+                <!-- Informações -->
+
+                <section class="album-info">
+
+                    <h2 id="albumTitle">
+                        Nossa História
+                    </h2>
+
+                    <p id="albumArtist">
+                        Ryhan
+                    </p>
+
+                    <p id="albumDescription">
+                        Álbum • 2026
+                    </p>
+
+                    <p id="albumTracks">
+                        27 faixas • 3 meses de amor
+                    </p>
+
+                </section>
+
+                <!-- Controles -->
+
+                <section class="albumControls">
+
+                    <button
+                        id="albumPrevious"
+                        aria-label="Anterior">
+
+                        ⏮
+
+                    </button>
+
+                    <button
+                        id="openLetter"
+                        aria-label="Iniciar experiência">
+
+                        ▶
+
+                    </button>
+
+                    <button
+                        id="albumNext"
+                        aria-label="Próximo">
+
+                        ⏭
+
+                    </button>
+
+                </section>
+
+                <!-- Frase -->
+
+                <p id="albumPhrase">
+                    Toque no play para começar a nossa história.
+                </p>
+
+            </section>
+
+        </section>
+
+        <!-- ============================================== -->
+        <!-- TELA DA CARTA -->
+        <!-- ============================================== -->
+
+        <section
+            id="letterScreen"
+            hidden>
+
+            <!-- Cabeçalho -->
+
+            <header class="topbar">
+
+                <button
+                    id="backAlbum"
+                    aria-label="Voltar ao álbum">
+
+                    ←
+
+                </button>
+
+                <div class="topbar-center">
+
+                    <span>Letra</span>
+
+                    <h2>
+                        Nossa História
+                    </h2>
+
+                </div>
+
+                <div class="topbar-space"></div>
+
+            </header>
+
+            <!-- Mini capa -->
+
+            <section class="miniAlbum">
+
+                <img
+                    id="miniCover"
+                    src="assets/album-cover.jpg"
+                    alt="Mini capa">
+
+            </section>
+
+            <!-- Carta -->
+
+            <article id="letterContainer">
+
+                <!--
+                    A carta será inserida pelo JavaScript.
+
+                    Todas as músicas deverão ser criadas
+                    utilizando:
+
+                    <span class="song" data-song="">
+                    </span>
+
+                -->
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- ============================================== -->
+    <!-- PLAYER -->
+    <!-- ============================================== -->
+
+    <footer id="player">
+
+        <section class="player-cover">
+
+            <img
+                id="playerCover"
+                src="assets/album-cover.jpg"
+                alt="Capa da música">
+
+        </section>
+
+        <section class="playerInfo">
+
+            <h3 id="playerTitle">
+                Nossa História
+            </h3>
+
+            <p id="playerArtist">
+                Toque uma música da carta.
+            </p>
+
+        </section>
+
+        <section class="playerButtons">
+
+            <button
+                id="previous"
+                aria-label="Música anterior">
+
+                ⏮
+
+            </button>
+
+            <button
+                id="playPause"
+                aria-label="Play ou Pause">
+
+                ▶
+
+            </button>
+
+            <button
+                id="next"
+                aria-label="Próxima música">
+
+                ⏭
+
+            </button>
+
+        </section>
+
+        <section class="playerProgress">
+
+            <span id="currentTime">
+                0:00
+            </span>
+
+            <input
+                id="progressBar"
+                type="range"
+                value="0"
+                min="0"
+                max="100">
+
+            <span id="duration">
+                0:00
+            </span>
+
+        </section>
+
+    </footer>
+
+    <!-- ============================================== -->
+    <!-- ÁUDIO -->
+    <!-- ============================================== -->
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
