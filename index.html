@@ -2,279 +2,591 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa História</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+
+<title>
+Nossa História
+</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Crimson+Text&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+
 </head>
+
+
 
 <body>
 
-    <!-- ===================================================== -->
-    <!-- APP -->
-    <!-- ===================================================== -->
 
-    <main id="app">
 
-        <!-- ============================================== -->
-        <!-- TELA DO ÁLBUM -->
-        <!-- ============================================== -->
+<div id="app">
 
-        <section id="albumScreen">
 
-            <!-- Cabeçalho -->
 
-            <header class="topbar">
+<!-- =========================
+     TELA DO ÁLBUM
+========================= -->
 
-                <button
-                    id="albumBack"
-                    aria-label="Voltar">
-                    ←
-                </button>
 
-                <div class="topbar-center">
-                    <span>Tocando álbum</span>
-                    <h1>Nossa História</h1>
-                </div>
+<section 
+id="albumScreen"
+class="screen active">
 
-                <button
-                    id="albumOptions"
-                    aria-label="Opções">
-                    ⋮
-                </button>
 
-            </header>
 
-            <!-- Conteúdo -->
+<header 
+id="albumHeader"
+class="header">
 
-            <section class="album-content">
 
-                <!-- Capa -->
+<button 
+id="albumBack"
+aria-label="Voltar">
 
-                <img
-                    id="albumCover"
-                    src="assets/album-cover.jpg"
-                    alt="Capa do álbum Nossa História">
+←
 
-                <!-- Informações -->
+</button>
 
-                <section class="album-info">
 
-                    <h2 id="albumTitle">
-                        Nossa História
-                    </h2>
 
-                    <p id="albumArtist">
-                        Ryhan
-                    </p>
+<div class="header-title">
 
-                    <p id="albumDescription">
-                        Álbum • 2026
-                    </p>
 
-                    <p id="albumTracks">
-                        27 faixas • 3 meses de amor
-                    </p>
+<span>
+Tocando álbum
+</span>
 
-                </section>
 
-                <!-- Controles -->
+<h1 id="albumHeaderTitle">
+Nossa História
+</h1>
 
-                <section class="albumControls">
 
-                    <button
-                        id="albumPrevious"
-                        aria-label="Anterior">
+</div>
 
-                        ⏮
 
-                    </button>
 
-                    <button
-                        id="openLetter"
-                        aria-label="Iniciar experiência">
+<button 
+id="albumOptions"
+aria-label="Opções">
 
-                        ▶
+⋮
 
-                    </button>
+</button>
 
-                    <button
-                        id="albumNext"
-                        aria-label="Próximo">
 
-                        ⏭
+</header>
 
-                    </button>
 
-                </section>
 
-                <!-- Frase -->
 
-                <p id="albumPhrase">
-                    Toque no play para começar a nossa história.
-                </p>
 
-            </section>
+<main 
+id="albumMain">
 
-        </section>
 
-        <!-- ============================================== -->
-        <!-- TELA DA CARTA -->
-        <!-- ============================================== -->
 
-        <section
-            id="letterScreen"
-            hidden>
+<div 
+id="albumCoverWrapper">
 
-            <!-- Cabeçalho -->
 
-            <header class="topbar">
+<img
 
-                <button
-                    id="backAlbum"
-                    aria-label="Voltar ao álbum">
+id="albumCover"
 
-                    ←
+src="assets/album-cover.jpg"
 
-                </button>
+alt="Capa do álbum">
 
-                <div class="topbar-center">
 
-                    <span>Letra</span>
+</div>
 
-                    <h2>
-                        Nossa História
-                    </h2>
 
-                </div>
 
-                <div class="topbar-space"></div>
 
-            </header>
 
-            <!-- Mini capa -->
+<section 
+id="albumInformation">
 
-            <section class="miniAlbum">
 
-                <img
-                    id="miniCover"
-                    src="assets/album-cover.jpg"
-                    alt="Mini capa">
+<h2 
+id="albumTitle">
 
-            </section>
+Nossa História
 
-            <!-- Carta -->
+</h2>
 
-            <article id="letterContainer">
 
-                <!--
-                    A carta será inserida pelo JavaScript.
+<p 
+id="albumArtist">
 
-                    Todas as músicas deverão ser criadas
-                    utilizando:
+Ryhan
 
-                    <span class="song" data-song="">
-                    </span>
+</p>
 
-                -->
 
-            </article>
 
-        </section>
+<span 
+id="albumDescription">
 
-    </main>
+Álbum • 2026
+<br>
+27 faixas • 3 meses de amor
 
-    <!-- ============================================== -->
-    <!-- PLAYER -->
-    <!-- ============================================== -->
+</span>
 
-    <footer id="player">
 
-        <section class="player-cover">
 
-            <img
-                id="playerCover"
-                src="assets/album-cover.jpg"
-                alt="Capa da música">
+</section>
 
-        </section>
 
-        <section class="playerInfo">
 
-            <h3 id="playerTitle">
-                Nossa História
-            </h3>
 
-            <p id="playerArtist">
-                Toque uma música da carta.
-            </p>
 
-        </section>
 
-        <section class="playerButtons">
 
-            <button
-                id="previous"
-                aria-label="Música anterior">
+<nav 
+id="albumControls">
 
-                ⏮
 
-            </button>
 
-            <button
-                id="playPause"
-                aria-label="Play ou Pause">
+<button
+id="albumPrevious"
+aria-label="Música anterior">
 
-                ▶
+⏮
 
-            </button>
+</button>
 
-            <button
-                id="next"
-                aria-label="Próxima música">
 
-                ⏭
 
-            </button>
+<button
 
-        </section>
+id="openLetter"
 
-        <section class="playerProgress">
+aria-label="Abrir carta">
 
-            <span id="currentTime">
-                0:00
-            </span>
+▶
 
-            <input
-                id="progressBar"
-                type="range"
-                value="0"
-                min="0"
-                max="100">
+</button>
 
-            <span id="duration">
-                0:00
-            </span>
 
-        </section>
 
-    </footer>
+<button
 
-    <!-- ============================================== -->
-    <!-- ÁUDIO -->
-    <!-- ============================================== -->
+id="albumNext"
 
-    <audio id="audioPlayer"></audio>
+aria-label="Próxima música">
 
-    <script src="script.js"></script>
+⏭
+
+</button>
+
+
+
+</nav>
+
+
+
+
+
+
+<p 
+id="albumMessage">
+
+Toque no play para começar a nossa história.
+
+</p>
+
+
+
+</main>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     TELA DA CARTA
+========================= -->
+
+
+
+<section
+
+id="letterScreen"
+
+class="screen">
+
+
+
+
+
+<header
+
+id="letterHeader"
+
+class="header">
+
+
+
+<button
+
+id="backAlbum"
+
+aria-label="Voltar ao álbum">
+
+←
+
+</button>
+
+
+
+
+<div class="header-title">
+
+
+<span>
+Letra
+</span>
+
+
+<h1>
+Nossa História
+</h1>
+
+
+</div>
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<div
+
+id="miniCoverArea">
+
+
+
+<img
+
+id="miniCover"
+
+src="assets/album-cover.jpg"
+
+alt="Mini capa">
+
+</div>
+
+
+
+
+
+
+
+
+<main
+
+id="letterMain">
+
+
+
+<article
+
+id="letterContainer">
+
+
+
+
+<!--
+O JavaScript irá inserir
+automaticamente a carta aqui.
+
+As músicas serão criadas como:
+
+<span class="song"
+data-song="Nome">
+
+</span>
+
+-->
+
+
+
+</article>
+
+
+
+
+
+
+
+<section
+
+id="memoriesContainer">
+
+
+
+<!--
+
+Futuras lembranças aparecerão aqui.
+
+Caso APP.memories esteja vazio,
+essa área ficará invisível.
+
+-->
+
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+
+<!-- =========================
+     PLAYER FIXO
+========================= -->
+
+
+
+<footer
+
+id="player">
+
+
+
+
+
+
+<div
+
+id="playerMain">
+
+
+
+<img
+
+id="playerCover"
+
+src="assets/album-cover.jpg"
+
+alt="Capa da música">
+
+
+<div
+
+id="playerTexts">
+
+
+
+<strong
+
+id="playerTitle">
+
+Nossa História
+
+</strong>
+
+
+
+<span
+
+id="playerArtist">
+
+Toque uma música da carta.
+
+</span>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div
+
+id="playerControls">
+
+
+
+<button
+
+id="previous"
+
+aria-label="Anterior">
+
+⏮
+
+</button>
+
+
+
+<button
+
+id="playPause"
+
+aria-label="Play">
+
+▶
+
+</button>
+
+
+
+<button
+
+id="next"
+
+aria-label="Próxima">
+
+⏭
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div
+
+id="progressContainer">
+
+
+
+<input
+
+id="progressBar"
+
+type="range"
+
+min="0"
+
+max="100"
+
+value="0">
+
+
+
+<div>
+
+
+<span id="currentTime">
+
+0:00
+
+</span>
+
+
+<span>
+
+/
+
+</span>
+
+
+<span id="duration">
+
+0:00
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     SISTEMA DE ÁUDIO
+========================= -->
+
+
+<audio
+
+id="audioPlayer"
+
+preload="none">
+
+</audio>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
 
 </body>
+
 
 </html>
