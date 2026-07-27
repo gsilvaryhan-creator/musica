@@ -44,7 +44,7 @@ const APP = {
         year:"2026",
 
 
-        description:"23 faixas • 3 meses de amor",
+        description:"24 faixas • 3 meses de amor",
 
 
         cover:"assets/album-cover.jpg"
@@ -86,12 +86,17 @@ const APP = {
         cover:"assets/music-covers/parece-destino.jpg"
     },
 
-    "Esse Seu Jeito":{
-        title:"Esse Seu Jeito",
-        artist:"Jean Tassy",
-        audio:"songs/esse-seu-jeito.mp3",
-        cover:"assets/music-covers/esse-seu-jeito.jpg"
-    },
+    "Cachos Encaracolados":{
+
+    title:"Cachos Encaracolados",
+
+    artist:"Viniciusss",
+
+    audio:"songs/cachos.mp3",
+
+    cover:"assets/music-covers/cachos.jpg"
+
+},
 
     "Aqueles Olhos":{
         title:"Aqueles Olhos",
@@ -223,6 +228,18 @@ const APP = {
         audio:"songs/pretin.mp3",
         cover:"assets/music-covers/pretin.jpg"
     },
+
+    "Can't Help Falling in Love":{
+
+    title:"Can't Help Falling in Love",
+
+    artist:"Elvis Presley",
+
+    audio:"songs/love.mp3",
+
+    cover:"assets/music-covers/love.jpg"
+
+},
 
     "Forever":{
         title:"Forever",
@@ -553,7 +570,7 @@ text:
 
 text:
 
-`Talvez eu nunca consiga explicar direito o que me fez me apaixonar. Talvez tenha sido <song>Esse Seu Jeito</song>, talvez <song>Aqueles Olhos</song> grandes, talvez seja o teu sorriso tão bonito... ou talvez seja porque você é você.`
+`Talvez eu nunca consiga explicar direito o que me fez me apaixonar. Talvez tenha sido seus <song>Cachos Encaracolados</song>, talvez <song>Aqueles Olhos</song> grandes, talvez seja o teu sorriso tão bonito... ou talvez seja porque você é você.`
 
 },
 
@@ -755,6 +772,14 @@ text:
 
 },
 
+
+{
+
+text:
+
+`I <song>Can't Help Falling in Love</song> with you.`
+
+},
 
 {
 
@@ -1081,9 +1106,6 @@ function loadSong(songName){
 
     DOM.audio.src =
     song.audio;
-
-
-
 
     DOM.playerTitle.textContent =
     song.title;
